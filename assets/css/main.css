@@ -8,17 +8,10 @@
 */
 
 :root {
-	--primary-color: #242943;
+	--primary-color: #939e88;
 	--secondary-color: #ffffff;
 	--hover-color: #9bf1ff;
 	--form-background: rgba(161, 161, 255, 0.25);
-}
-
-.light-theme {
-	--primary-color: #ffffff;
-	--secondary-color: #242943;
-	--hover-color: #6fc3df;
-	--form-background: rgba(36, 41, 67, 0.1);
 }
 
 html, body, div, span, applet, object,
