@@ -4096,3 +4096,45 @@ body[lang="en"] [lang="ru"] {
 body[lang="ru"] [lang="en"] {
 	display: none !important ;
 }
+/* --- Rotating Earth banner background --- */
+#banner.major {
+  position: relative;
+  overflow: hidden;
+}
+
+#banner.major .earth-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
+  /* Earth texture image (you provide the file path) */
+  background-image: url("images/earth_texture.jpg");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: 0% 50%;
+
+  filter: brightness(0.7) contrast(1.05);
+  transform: scale(1.1);
+  animation: earthSpin 30s linear infinite;
+}
+
+@keyframes earthSpin {
+  from { background-position: 0% 50%; }
+  to   { background-position: 200% 50%; }
+}
+
+/* Make sure banner content sits above the earth layer */
+#banner.major .inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* Optional: dark overlay so text stays readable */
+#banner.major::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
