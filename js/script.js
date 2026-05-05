@@ -18,13 +18,6 @@
 
     map.on('load', () => {
       map.setTerrain(null);
-      map.setFog({
-        range: [-1, 2],
-        'horizon-blend': 0.7,
-        color: '#8492d1',
-        'space-color': '#0B1026',
-        'star-intensity': 1
-      });
 
       map.flyTo({
         center: [-75.16319489089436, 39.953222209814],
