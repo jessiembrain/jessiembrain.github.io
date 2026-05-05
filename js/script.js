@@ -30,9 +30,8 @@
 
       map.once('moveend', () => {
         map.easeTo({
-          pitch: 85,
-          bearing: 170,
-          duration: 5000,
+          pitch: 90,
+          bearing: 250,
           easing: (t) => t,
           essential: true
         });
