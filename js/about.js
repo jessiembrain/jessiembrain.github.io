@@ -45,11 +45,11 @@
   // --- About Page Mapbox Map ---
   const mapContainer = document.getElementById('about-map');
   if (mapContainer && typeof mapboxgl !== 'undefined') {
-    mapboxgl.accessToken = 'pk.eyJ1IjoiY211bnJvIiwiYSI6ImNrZzl0bHE3ZjAwbTcyenBxYXBibGloYngifQ.ZWwFhWy6Edp1Q8X7A9PeyQ';
+    mapboxgl.accessToken = 'pk.eyJ1IjoiamJyYWluMSIsImEiOiJjbG85MTNmZW8wNW80MnFwbTRiZXJmNGZuIn0.4Ajv4kTvH6rx0ym0AmE-gQ';
 
     const map = new mapboxgl.Map({
       container: 'about-map',
-      style: 'mapbox://styles/mapbox/light-v11',
+      style: 'mapbox://styles/jbrain1/cmoszsu3g001j01s473gx6xzs',
       center: [-87.0, 40.5],
       zoom: 3.8
     });
