@@ -12,7 +12,7 @@
       style: 'mapbox://styles/jbrain1/cmoszsu3g001j01s473gx6xzs',
       center: [-75.16368012081547, 39.952484115995304],
       zoom: 2,
-      interactive: true,
+      interactive: false,
       attributionControl: false
     });
 
@@ -22,8 +22,8 @@
       map.flyTo({
         center: [-75.16368012081547, 39.952484115995304],
         zoom: 16,
-        pitch: 75,
-        speed: 0.5,
+        pitch: 83,
+        speed: 0.9,
         curve: 3,
         essential: true
       });
