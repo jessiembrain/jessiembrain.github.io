@@ -20,7 +20,7 @@
       map.setTerrain(null);
       map.setFog({
         range: [-1, 2],
-        'horizon-blend': 0.5,
+        'horizon-blend': 0.7,
         color: '#8492d1',
         'high-color': '#8492d1',
         'space-color': '#0B1026',
@@ -40,7 +40,7 @@
         map.easeTo({
           pitch: 85,
           bearing: 0,
-          duration: 5000,
+          duration: 10,
           easing: (t) => t,
           essential: true
         });
