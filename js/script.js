@@ -32,7 +32,7 @@
         map.easeTo({
           pitch: 85,
           bearing: 0,
-          duration: 10,
+          duration: 5000,
           easing: (t) => t,
           essential: true
         });
