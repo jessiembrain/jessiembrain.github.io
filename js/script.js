@@ -24,7 +24,7 @@
         zoom: 16,
         pitch: 100,
         speed: 0.5,
-        curve: 6,
+        curve: 1,
         essential: true
       });
 
