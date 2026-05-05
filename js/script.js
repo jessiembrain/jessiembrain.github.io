@@ -22,8 +22,8 @@
       map.flyTo({
         center: [-75.16368012081547, 39.952484115995304],
         zoom: 16,
-        pitch: 83,
-        speed: 0.7,
+        pitch: 100,
+        speed: 0.5,
         curve: 1,
         essential: true
       });
