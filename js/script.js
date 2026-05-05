@@ -22,7 +22,6 @@
         range: [-1, 2],
         'horizon-blend': 0.7,
         color: '#8492d1',
-        'high-color': '#8492d1',
         'space-color': '#0B1026',
         'star-intensity': 1
       });
