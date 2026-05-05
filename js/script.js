@@ -12,7 +12,7 @@
       style: 'mapbox://styles/adoucett/cl59necov000b15pk1jirufhx',
       center: [0, 55],
       zoom: 2,
-      interactive: false,
+      interactive: true,
       attributionControl: false
     });
 
