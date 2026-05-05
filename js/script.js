@@ -36,7 +36,7 @@
           easing: (t) => t,
           essential: true
         });
-        flyNorth(map);
+        flySouth(map);
       });
     });
   }
