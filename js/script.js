@@ -10,7 +10,7 @@
     const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/jbrain1/cmoszsu3g001j01s473gx6xzs',
-      center: [0, 55],
+      center: [-75.16368012081547, 39.952484115995304],
       zoom: 2,
       interactive: true,
       attributionControl: false
@@ -20,11 +20,11 @@
       map.setTerrain(null);
 
       map.flyTo({
-        center: [-75.16319489089436, 39.953222209814],
+        center: [-75.16368012081547, 39.952484115995304],
         zoom: 16,
         pitch: 75,
         speed: 0.5,
-        curve: 1.5,
+        curve: 3,
         essential: true
       });
 
