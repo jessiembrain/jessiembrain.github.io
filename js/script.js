@@ -21,8 +21,8 @@
       map.setFog({
         range: [-1, 2],
         'horizon-blend': 0.5,
-        color: '#242B4B',
-        'high-color': '#161B36',
+        color: '#af6db3',
+        'high-color': '#8492d1',
         'space-color': '#0B1026',
         'star-intensity': 1
       });
