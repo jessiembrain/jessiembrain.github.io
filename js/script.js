@@ -18,7 +18,7 @@
 
     map.on('load', () => {
       map.setTerrain(null);
-      flySouth(map);
+      flyNorth(map);
       map.flyTo({
         center: [-75.19406830626386, 39.96963965399903],
         zoom: 16,
