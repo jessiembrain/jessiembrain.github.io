@@ -13,7 +13,8 @@
       center: [-75.16368012081547, 39.952484115995304],
       zoom: 5,
       interactive: false,
-      attributionControl: false
+      attributionControl: false, 
+      bearing: 10
     });
 
     map.on('load', () => {
@@ -22,7 +23,7 @@
       map.flyTo({
         center: [-75.16509932664746,39.94557990625049],
         zoom: 16,
-        pitch: 100,
+        pitch: 85,
         speed: 0.5,
         curve: 3,
         essential: true
@@ -31,7 +32,6 @@
       map.once('moveend', () => {
         map.easeTo({
           pitch: 85,
-          bearing: 10,
           duration: 10,
           easing: (t) => t,
           essential: true
