@@ -56,7 +56,7 @@
     //});
 
     map.once('moveend', () => flyFinal(map));
-  }
+  //}
 
   function flyFinal(map) {
     // SEGMENT 2: Logan Circle → City Hall
