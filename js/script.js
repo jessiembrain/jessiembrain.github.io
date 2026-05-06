@@ -12,48 +12,34 @@
     mapboxgl.accessToken =
       'pk.eyJ1IjoiamJyYWluMSIsImEiOiJjbG85MTNmZW8wNW80MnFwbTRiZXJmNGZuIn0.4Ajv4kTvH6rx0ym0AmE-gQ';
 
-    const map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/jbrain1/cmoszsu3g001j01s473gx6xzs',
-      center: ART_MUSEUM,
-      zoom: 18,
-      pitch: 85,
-      bearing: 130,
-      interactive: true,
-      attributionControl: true
-    });
+    
+const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/jbrain1/cmoszsu3g001j01s473gx6xzs',
+    center: ART_MUSEUM,
+    zoom: 17.5,
+    pitch: 80,
+    bearing: 135, // aligns with Parkway axis
+    interactive: true,
+    attributionControl: true
+  });
 
-    map.on('load', () => {
-      map.setTerrain(null);
+  map.on('load', () => {
+    map.setTerrain(null);
 
-      // Art Museum reveal
-      map.flyTo({
-        center: ART_MUSEUM,
-        zoom: 18,
-        pitch: 85,
-        bearing: 130,
-        speed: 0.35,
-        curve: 1.2,
-        essential: true
-      });
-
-      map.once('moveend', () => flyFinal(map));
-    });
-  }
-
-  function flyFinal(map) {
-    // Art Museum → City Hall
+    // One smooth cinematic glide
     map.flyTo({
       center: CITY_HALL,
-      zoom: 20,
-      pitch: 85,
+      zoom: 19.5,
+      pitch: 80,
       bearing: 130,
-      speed: 0.25,
-      curve: 1.1,
-      easing: t => t,
+      speed: 0.12,       // <-- SLOW = smooth
+      curve: 1.6,       // <-- glide feel
+      easing: t => t,   // linear, cinematic
       essential: true
     });
-  }
+  });
+})
 
   initializeMap();
 })();
