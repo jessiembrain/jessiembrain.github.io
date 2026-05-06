@@ -17,7 +17,7 @@
       container: 'map',
       style: 'mapbox://styles/jbrain1/cmoszsu3g001j01s473gx6xzs',
       center: ART_MUSEUM,
-      zoom: 14,
+      zoom: 15,
       pitch: 70,
       bearing: 170,
       interactive: true,
@@ -32,7 +32,7 @@
         center: ART_MUSEUM,
         zoom: 15,
         pitch: 75,
-        bearing: 170,
+        bearing: 150,
         speed: 0.35,
         curve: 1.2,
         essential: true
@@ -46,9 +46,9 @@
     // SEGMENT 1: Art Museum → Logan Circle
     map.flyTo({
       center: LOGAN_CIRCLE,
-      zoom: 15.5,
+      zoom: 16.5,
       pitch: 78,
-      bearing: 170,
+      bearing: 150,
       speed: 0.28,
       curve: 1.1,
       easing: t => t,
@@ -64,7 +64,7 @@
       center: CITY_HALL,
       zoom: 16.5,
       pitch: 82,
-      bearing: 165, // slight turn toward City Hall axis
+      bearing: 150, // slight turn toward City Hall axis
       speed: 0.25,
       curve: 1.05,
       easing: t => t,
