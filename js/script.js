@@ -6,7 +6,6 @@
 
   // --- Parkway waypoints ---
   const ART_MUSEUM = [-75.1803, 39.9656];
- //const LOGAN_CIRCLE = [-75.1703, 39.9579];-->
   const CITY_HALL = [-75.1638, 39.9526];
 
   function initializeMap() {
@@ -27,7 +26,7 @@
     map.on('load', () => {
       map.setTerrain(null);
 
-      // START: Art Museum reveal
+      // Art Museum reveal
       map.flyTo({
         center: ART_MUSEUM,
         zoom: 18,
@@ -38,33 +37,17 @@
         essential: true
       });
 
-      map.once('moveend', () => flySegment(map));
+      map.once('moveend', () => flyFinal(map));
     });
   }
 
-  function flySegment(map) {
-    // SEGMENT 1: Art Museum → Logan Circle
-    //map.flyTo({
-      //center: LOGAN_CIRCLE,
-      //zoom: 18,
-     // pitch: 85,
-      //bearing: 130,
-      //speed: 0.25,
-      //curve: 1.1,
-      //easing: t => t,
-      //essential: true
-    //});
-
-    //map.once('moveend', () => flyFinal(map));
-  }
-
   function flyFinal(map) {
-    // SEGMENT 2: Logan Circle → City Hall
+    // Art Museum → City Hall
     map.flyTo({
       center: CITY_HALL,
       zoom: 20,
       pitch: 85,
-      bearing: 130, // slight turn toward City Hall axis
+      bearing: 130,
       speed: 0.25,
       curve: 1.1,
       easing: t => t,
