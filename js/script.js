@@ -34,7 +34,8 @@
           pitch: 85,
           duration: 10,
           easing: (t) => t,
-          essential: true
+          essential: true, 
+          speed: 0.2
         });
 
         flyNorth(map);
