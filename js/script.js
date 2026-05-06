@@ -22,8 +22,8 @@
 
       map.flyTo({
         center: [-75.182021337454, 39.96639643677724],
-        zoom: 25,
-        pitch: 85,
+        zoom: 15,
+        pitch: 65,
         speed: 0.5,
         curve: 3,
         essential: true
@@ -31,7 +31,7 @@
 
       map.once('moveend', () => {
         map.easeTo({
-          pitch: 85,
+          pitch: 65,
           duration: 1000,
           easing: (t) => t,
           essential: true, 
