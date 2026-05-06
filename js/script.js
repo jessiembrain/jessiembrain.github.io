@@ -17,7 +17,7 @@
         });
       });
     });
-  }
+  })
 
   function flyNorth(map) {
     const duration = 100000;
