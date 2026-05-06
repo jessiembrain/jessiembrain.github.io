@@ -10,9 +10,9 @@
     const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/jbrain1/cmoszsu3g001j01s473gx6xzs',
-      center: [-75.16368012081547, 39.952484115995304],
+      center: [-75.163672138798, 39.95233943965799],
       zoom: 5,
-      interactive: false,
+      interactive: true,
       attributionControl: false, 
       bearing: 10
     });
