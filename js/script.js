@@ -62,11 +62,11 @@
     // SEGMENT 2: Logan Circle → City Hall
     map.flyTo({
       center: CITY_HALL,
-      zoom: 16.5,
-      pitch: 82,
+      zoom: 20,
+      pitch: 85,
       bearing: 130, // slight turn toward City Hall axis
       speed: 0.25,
-      curve: 1.0,
+      curve: 1.1,
       easing: t => t,
       essential: true
     });
