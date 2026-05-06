@@ -1,57 +1,63 @@
-(function() {
+(function () {
   'use strict';
 
   const mapContainer = document.getElementById('map');
   if (!mapContainer || window.innerWidth <= 768) return;
 
+  // --- Landmarks ---
+  const ART_MUSEUM = [-75.1803, 39.9656];
+  const CITY_HALL = [-75.1638, 39.9526];
+
   function initializeMap() {
-    mapboxgl.accessToken = 'pk.eyJ1IjoiamJyYWluMSIsImEiOiJjbG85MTNmZW8wNW80MnFwbTRiZXJmNGZuIn0.4Ajv4kTvH6rx0ym0AmE-gQ';
+    mapboxgl.accessToken =
+      'pk.eyJ1IjoiamJyYWluMSIsImEiOiJjbG85MTNmZW8wNW80MnFwbTRiZXJmNGZuIn0.4Ajv4kTvH6rx0ym0AmE-gQ';
 
     const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/jbrain1/cmoszsu3g001j01s473gx6xzs',
-      center: [-75.182021337454, 39.96639643677724],
+      center: ART_MUSEUM,
       zoom: 5,
+      bearing: 170,          // face south / down the Parkway
+      pitch: 0,
       interactive: true,
-      attributionControl: true, 
-      bearing: 10
+      attributionControl: true
     });
 
     map.on('load', () => {
       map.setTerrain(null);
 
+      // 1️⃣ Frame the Art Museum
       map.flyTo({
-        center: [-75.182021337454, 39.96639643677724],
+        center: ART_MUSEUM,
         zoom: 15,
         pitch: 65,
-        speed: 0.5,
-        curve: 3,
+        bearing: 170,
+        speed: 0.6,
+        curve: 1.8,
         essential: true
       });
 
+      // 2️⃣ Fly south to City Hall
       map.once('moveend', () => {
-        map.easeTo({
-          pitch: 65,
-          duration: 1000,
-          easing: (t) => t,
-          essential: true, 
-          speed: 0.2,
-          interaction: true
-        });
-
         flySouth(map);
-
-        map.once('moveend', () => {
-          map.easeTo({
-            pitch: 90,
-            easing: (t) => t,
-            essential: true
-          });
-        });
       });
     });
   }
 
-  initializeMap(); // <-- you were missing this call
+  function flySouth(map) {
+    map.flyTo({
+      center: CITY_HALL,
+      zoom: 16,
+      pitch: 75,
+      bearing: 170,
+      speed: 0.4,
+      curve: 1.6,
+      easing: (t) => t,
+      essential: true
+    });
+  }
 
-})(); // <-- this closes and invokes the IIFE
+  // ✅ Initialize the map
+  initializeMap();
+
+})();
