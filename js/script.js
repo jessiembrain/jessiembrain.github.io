@@ -53,7 +53,7 @@
       //curve: 1.1,
       //easing: t => t,
       //essential: true
-    });
+    //});
 
     map.once('moveend', () => flyFinal(map));
   }
