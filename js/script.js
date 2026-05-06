@@ -42,7 +42,7 @@
     });
   }
 
-  //function flySegment(map) {
+  function flySegment(map) {
     // SEGMENT 1: Art Museum → Logan Circle
     //map.flyTo({
       //center: LOGAN_CIRCLE,
@@ -55,8 +55,8 @@
       //essential: true
     //});
 
-    map.once('moveend', () => flyFinal(map));
-  //}
+    //map.once('moveend', () => flyFinal(map));
+  }
 
   function flyFinal(map) {
     // SEGMENT 2: Logan Circle → City Hall
