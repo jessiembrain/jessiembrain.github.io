@@ -19,7 +19,7 @@
       center: ART_MUSEUM,
       zoom: 15,
       pitch: 70,
-      bearing: 170,
+      bearing: 130,
       interactive: true,
       attributionControl: true
     });
@@ -30,7 +30,7 @@
       // START: Art Museum reveal
       map.flyTo({
         center: ART_MUSEUM,
-        zoom: 15,
+        zoom: 16.5,
         pitch: 75,
         bearing: 150,
         speed: 0.35,
@@ -48,8 +48,8 @@
       center: LOGAN_CIRCLE,
       zoom: 16.5,
       pitch: 78,
-      bearing: 150,
-      speed: 0.28,
+      bearing: 130,
+      speed: 0.25,
       curve: 1.1,
       easing: t => t,
       essential: true
@@ -64,9 +64,9 @@
       center: CITY_HALL,
       zoom: 16.5,
       pitch: 82,
-      bearing: 150, // slight turn toward City Hall axis
+      bearing: 130, // slight turn toward City Hall axis
       speed: 0.25,
-      curve: 1.05,
+      curve: 1.0,
       easing: t => t,
       essential: true
     });
