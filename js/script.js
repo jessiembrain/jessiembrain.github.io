@@ -4,8 +4,9 @@
   const mapContainer = document.getElementById('map');
   if (!mapContainer || window.innerWidth <= 768) return;
 
-  // --- Landmarks ---
+  // --- Parkway waypoints ---
   const ART_MUSEUM = [-75.1803, 39.9656];
+  const LOGAN_CIRCLE = [-75.1703, 39.9579];
   const CITY_HALL = [-75.1638, 39.9526];
 
   function initializeMap() {
@@ -16,9 +17,9 @@
       container: 'map',
       style: 'mapbox://styles/jbrain1/cmoszsu3g001j01s473gx6xzs',
       center: ART_MUSEUM,
-      zoom: 5,
-      bearing: 170,          // face south / down the Parkway
-      pitch: 0,
+      zoom: 14,
+      pitch: 70,
+      bearing: 170,
       interactive: true,
       attributionControl: true
     });
@@ -26,38 +27,50 @@
     map.on('load', () => {
       map.setTerrain(null);
 
-      // 1️⃣ Frame the Art Museum
+      // START: Art Museum reveal
       map.flyTo({
         center: ART_MUSEUM,
         zoom: 15,
-        pitch: 65,
+        pitch: 75,
         bearing: 170,
-        speed: 0.6,
-        curve: 1.8,
+        speed: 0.35,
+        curve: 1.2,
         essential: true
       });
 
-      // 2️⃣ Fly south to City Hall
-      map.once('moveend', () => {
-        flySouth(map);
-      });
+      map.once('moveend', () => flySegment(map));
     });
   }
 
-  function flySouth(map) {
+  function flySegment(map) {
+    // SEGMENT 1: Art Museum → Logan Circle
+    map.flyTo({
+      center: LOGAN_CIRCLE,
+      zoom: 15.5,
+      pitch: 78,
+      bearing: 170,
+      speed: 0.28,
+      curve: 1.1,
+      easing: t => t,
+      essential: true
+    });
+
+    map.once('moveend', () => flyFinal(map));
+  }
+
+  function flyFinal(map) {
+    // SEGMENT 2: Logan Circle → City Hall
     map.flyTo({
       center: CITY_HALL,
-      zoom: 16,
-      pitch: 75,
-      bearing: 170,
-      speed: 0.4,
-      curve: 1.6,
-      easing: (t) => t,
+      zoom: 16.5,
+      pitch: 82,
+      bearing: 165, // slight turn toward City Hall axis
+      speed: 0.25,
+      curve: 1.05,
+      easing: t => t,
       essential: true
     });
   }
 
-  // ✅ Initialize the map
   initializeMap();
-
 })();
