@@ -24,22 +24,21 @@ const map = new mapboxgl.Map({
     attributionControl: true
   });
 
-  map.on('load', () => {
+   map.on('load', () => {
     map.setTerrain(null);
 
-    // One smooth cinematic glide
     map.flyTo({
       center: CITY_HALL,
       zoom: 19.5,
       pitch: 80,
       bearing: 130,
-      speed: 0.12,       // <-- SLOW = smooth
-      curve: 1.6,       // <-- glide feel
-      easing: t => t,   // linear, cinematic
+      speed: 0.12,
+      curve: 1.6,
+      easing: t => t,
       essential: true
     });
   });
-})
+}
 
-  initializeMap();
+initializeMap();
 })();
