@@ -19,6 +19,7 @@ const map = new mapboxgl.Map({
     center: ART_MUSEUM,
     zoom: 17.5,
     pitch: 80,
+    speed: 0.2,
     bearing: 135, // aligns with Parkway axis
     interactive: true,
     attributionControl: true
@@ -32,6 +33,7 @@ const map = new mapboxgl.Map({
       zoom: 19.5,
       pitch: 80,
       bearing: 130,
+      speed: 0.2,
       duration: 4000,
       essential: true
     });
