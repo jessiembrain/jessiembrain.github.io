@@ -32,7 +32,6 @@ const map = new mapboxgl.Map({
       zoom: 19.5,
       pitch: 80,
       bearing: 130,
-      speed: 0.12,
       duration: 4000,
       essential: true
     });
