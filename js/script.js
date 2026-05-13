@@ -34,7 +34,7 @@ const map = new mapboxgl.Map({
       pitch: 80,
       bearing: 130,
       speed: 0.12,
-      duration: 4000
+      duration: 4000,
       easing: t => t,
       essential: true
     });
