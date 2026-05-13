@@ -21,7 +21,6 @@ const map = new mapboxgl.Map({
     pitch: 80,
     bearing: 135, // aligns with Parkway axis
     interactive: true,
-    easing: t => t,
     attributionControl: true
   });
 
@@ -35,7 +34,6 @@ const map = new mapboxgl.Map({
       bearing: 130,
       speed: 0.12,
       duration: 4000,
-      easing: t => t,
       essential: true
     });
   });
