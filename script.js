@@ -7,7 +7,7 @@
    ========================================================= */
 
 const NS = "http://www.w3.org/2000/svg";
-const C = { accent: "#ACD2DD", teal: "#82BF90", butter: "#D0C9D9", plum: "#7b5ea7", ink: "#1b2433" };
+const C = { accent: "#82BF90", teal: "#ACD2DD", butter: "#D0C9D9", plum: "#7b5ea7", ink: "#1b2433" };
 
 // Tiny seeded RNG so art is the same on every load
 function rng(seed) {
