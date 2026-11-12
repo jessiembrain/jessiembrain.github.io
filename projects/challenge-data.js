@@ -22,7 +22,7 @@ const CHALLENGE = [
   { day: 7,  theme: "Theme",    title: "Map title", description: "", image: "", tools: [], link: "" },
   { day: 8,  theme: "Theme",    title: "Map title", description: "", image: "", tools: [], link: "" },
   { day: 9,  theme: "Theme",    title: "Map title", description: "", image: "", tools: [], link: "" },
-  { day: 10, theme: "Theme",    title: "Map title", description: "", image: "", tools: [], link: "" },
+  { day: 10, theme: "Prompting Only",    title: "Day 10: Prompting Only", description: "", image: "be-kind-rewind.png", tools: [], link: "be-kind-rewind.html" },
   { day: 11, theme: "Theme",    title: "Map title", description: "", image: "", tools: [], link: "" },
   { day: 12, theme: "Theme",    title: "Map title", description: "", image: "", tools: [], link: "" },
   { day: 13, theme: "Theme",    title: "Map title", description: "", image: "", tools: [], link: "" },
