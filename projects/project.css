@@ -87,3 +87,10 @@ kbd { font-family: var(--mono); border: 1px solid var(--line); border-bottom-wid
   #counter { display: none; }
   .hero-img .thumb { aspect-ratio: 16 / 10; }
 }
+.stage iframe.embed {
+  width: 100%;
+  aspect-ratio: 760 / 500;
+  border: 0;
+  background: #fff;
+}
+.chip.wide { padding-inline: 0.9em; min-width: auto; }
