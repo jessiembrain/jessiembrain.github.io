@@ -20,17 +20,6 @@
   --max: 1180px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #12161f;
-    --paper-2: #181e2a;
-    --ink: #efe9dd;
-    --ink-soft: #a8b0bf;
-    --line: #2b3343;
-    --card: #1a2030;
-    --contour: rgba(239, 233, 221, 0.10);
-  }
-}
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
