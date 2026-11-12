@@ -13,7 +13,7 @@
    ========================================================= */
 
 const CHALLENGE = [
-  { day: 1,  theme: "Points",   title: "Map title", description: "A sentence or two about this map.", image: "", tools: ["QGIS", "Claude", "Canva"], link: "" },
+  { day: 1,  theme: "Points",   title: "Map title", description: "A sentence or two about this map.", image: "little-miss-sunshine.png", tools: ["QGIS", "Claude", "Canva"], link: "" },
   { day: 2,  theme: "Lines",    title: "Map title", description: "A sentence or two about this map.", image: "", tools: [], link: "" },
   { day: 3,  theme: "Polygons", title: "Map title", description: "A sentence or two about this map.", image: "", tools: [], link: "" },
   { day: 4,  theme: "Clusters", title: "Map title", description: "A sentence or two about this map.", image: "", tools: [], link: "" },
