@@ -96,13 +96,14 @@ h1 em { font-style: normal; color: var(--accent); }
 .btn-ghost { border: 1.5px solid var(--ink); }
 .btn-ghost:hover { background: var(--ink); color: var(--paper); }
 
-.coords {
+/*.coords {
   position: absolute; bottom: 28px; right: clamp(16px, 4vw, 48px);
   display: flex; gap: 18px; align-items: center; color: var(--ink-soft);
 }
 .scale { display: flex; align-items: center; gap: 8px; }
 .scale i { display: block; width: 60px; height: 6px; border: 1.5px solid var(--ink-soft); border-top: 0;
   background: linear-gradient(90deg, var(--ink-soft) 50%, transparent 50%); background-size: 30px 100%; }
+*/
 
 /* ---------- Sections ---------- */
 section, footer { padding: 100px clamp(16px, 4vw, 48px); }
