@@ -77,7 +77,7 @@ ul { list-style: none; }
 @keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--teal) 60%, transparent); }
                    50% { box-shadow: 0 0 0 6px transparent; } }
 
-/*h1 {
+h1 {
   font-size: clamp(2.6rem, 8vw, 6.4rem);
   line-height: 0.98; font-weight: 800; letter-spacing: -0.035em;
   margin: 28px 0 24px;
@@ -95,7 +95,7 @@ h1 em { font-style: normal; color: var(--accent); }
 .btn-primary:hover { transform: translate(-2px,-2px); box-shadow: 6px 6px 0 var(--ink); }
 .btn-ghost { border: 1.5px solid var(--ink); }
 .btn-ghost:hover { background: var(--ink); color: var(--paper); }
-
+/*
 .coords {
   position: absolute; bottom: 28px; right: clamp(16px, 4vw, 48px);
   display: flex; gap: 18px; align-items: center; color: var(--ink-soft);
