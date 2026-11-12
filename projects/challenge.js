@@ -1,4 +1,4 @@
-\/* =========================================================
+/* =========================================================
    30 Day Map Challenge viewer
    - Starts on Day 1 (or the day in the URL, e.g. #day-12)
    - Prev / Next arrows, dropdown, day chips, ← → keys
