@@ -21,7 +21,7 @@ const CHALLENGE = [
   { day: 7,  theme: "Theme",    title: "Map title", description: "", image: "", tools: [], link: "" },
   { day: 8,  theme: "Theme",    title: "Map title", description: "", image: "", tools: [], link: "" },
   { day: 9,  theme: "Theme",    title: "Map title", description: "", image: "", tools: [], link: "" },
-  { day: 10, theme: "Theme",    title: "Map title", description: "", image: "", tools: [], link: "" },
+  { day: 10, theme: "Prompting",    title: "Be Kind, Rewind", description: "", image: "", tools: ["Claude"], link: "" },
   { day: 11, theme: "Theme",    title: "Map title", description: "", image: "", tools: [], link: "" },
   { day: 12, theme: "Theme",    title: "Map title", description: "", image: "", tools: [], link: "" },
   { day: 13, theme: "Theme",    title: "Map title", description: "", image: "", tools: [], link: "" },
