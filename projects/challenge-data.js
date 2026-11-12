@@ -21,7 +21,7 @@ const CHALLENGE = [
   { day: 7,  theme: "10 minute map",    title: "Map title", description: "", image: "", tools: [], link: "" },
   { day: 8,  theme: "Utopia",    title: "Map title", description: "", image: "", tools: [], link: "" },
   { day: 9,  theme: "Urban-rural",    title: "Map title", description: "", image: "", tools: [], link: "" },
-  { day: 10, theme: "Prompting only",    title: "Be Kind, Rewind", description: "", image: "", tools: ["Claude"], link: "be-kind-rewind.html" },
+  { day: 10, theme: "Prompting only",    title: "Be Kind, Rewind", description: "", image: "be-kind-rewind.html", tools: ["Claude"], link: "be-kind-rewind.html" },
   { day: 11, theme: "Sound",    title: "Map title", description: "", image: "", tools: [], link: "" },
   { day: 12, theme: "Power",    title: "Map title", description: "", image: "", tools: [], link: "" },
   { day: 13, theme: "Interactions",    title: "Map title", description: "", image: "", tools: [], link: "" },
