@@ -41,14 +41,17 @@
   </div>
 
   <!-- ============ VIEWER ============ -->
-  <section class="viewer">
+ <section class="viewer">
     <div class="viewer-grid">
       <div class="stage" id="stage" aria-live="polite"></div>
 
       <div class="day-info">
+        <span class="tag mono theme" id="dayTheme">Points</span>
         <h2 id="dayTitle">Map title</h2>
         <p id="dayDesc"></p>
         <ul class="tools mono" id="dayTools"></ul>
+        <a class="btn btn-ghost" id="dayLink" href="#" target="_blank" rel="noopener" hidden>View full size ↗</a>
+        <p class="hint mono">Tip: use <kbd>←</kbd> <kbd>→</kbd> to flip through days.</p>
       </div>
     </div>
   </section>
