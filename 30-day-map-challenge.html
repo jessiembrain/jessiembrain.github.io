@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>#30DayMapChallenge — Jessie</title>
+  <meta name="description" content="Thirty maps in thirty days: my #30DayMapChallenge entries.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a href="../index.html" class="logo" aria-label="Home">
+      <span class="logo-pin"></span><span>Jessie<span class="logo-dot">.gis</span></span>
+    </a>
+    <nav>
+      <a href="../index.html#work" class="back">← All projects</a>
+      <a href="../index.html#contact" class="nav-cta">Say hi</a>
+    </nav>
+  </header>
+
+  <!-- ============ DAY SELECTION BAR ============ -->
+  <div class="daybar">
+    <div class="daybar-inner">
+      <div class="daybar-row">
+        <button class="arrow" id="prevDay" type="button" aria-label="Previous day">←</button>
+        <div class="select-wrap">
+          <label for="daySelect" class="sr-only" hidden>Choose a day</label>
+          <select id="daySelect" aria-label="Choose a day"></select>
+        </div>
+        <button class="arrow" id="nextDay" type="button" aria-label="Next day">→</button>
+        <span class="mono" id="counter">1 / 30</span>
+      </div>
+      <div class="chips-row" id="dayChips" aria-label="Jump to day"></div>
+    </div>
+    <div class="progress-track"><div id="progress"></div></div>
+  </div>
+
+  <!-- ============ VIEWER ============ -->
+  <section class="viewer">
+    <div class="viewer-grid">
+      <div class="stage" id="stage" aria-live="polite"></div>
+
+      <div class="day-info">
+        <span class="mono section-num">#30DayMapChallenge · Nov 2026</span>
+        <div class="day-big" id="dayNum">01</div>
+        <span class="tag mono theme" id="dayTheme">Points</span>
+        <h2 id="dayTitle">Map title</h2>
+        <p id="dayDesc"></p>
+        <ul class="tools mono" id="dayTools"></ul>
+        <a class="btn btn-ghost" id="dayLink" href="#" target="_blank" rel="noopener" hidden>View full size ↗</a>
+        <p class="hint mono">Tip: use <kbd>←</kbd> <kbd>→</kbd> to flip through days.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="slim-footer mono">
+    <a href="../index.html#work" class="back">← Back to all projects</a>
+  </footer>
+
+  <script src="challenge-data.js"></script>
+  <script src="challenge.js"></script>
+</body>
+</html>
