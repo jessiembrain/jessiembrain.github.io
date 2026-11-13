@@ -14,7 +14,7 @@
 
 const CHALLENGE = [
   { day: 1,  theme: "Points",   title: "Day 1 & 2: Points and Lines", description: "A sentence or two about this map.", image: "little-miss-sunshine.png", tools: ["QGIS", "Claude", "Canva"], link: "" },
-  { day: 2,  theme: "Lines",    title: "Map title", description: "A sentence or two about this map.", image: "", tools: [], link: "" },
+  { day: 2,  theme: "Lines",    title: "Map title", description: "A sentence or two about this map.", image: "Polygon.jpg", tools: [], link: "" },
   { day: 3,  theme: "Polygons", title: "Map title", description: "A sentence or two about this map.", image: "", tools: [], link: "" },
   { day: 4,  theme: "Clusters", title: "Map title", description: "A sentence or two about this map.", image: "", tools: [], link: "" },
   { day: 5,  theme: "Sight",    title: "Map title", description: "A sentence or two about this map.", image: "", tools: [], link: "" },
